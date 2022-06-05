@@ -1,0 +1,41 @@
+.container {
+  border-radius: 12px;
+  margin-left: 64px;
+  padding: 48px 72px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1064px) {
+  .container  {
+    margin-top: 32px;
+    margin-left: 0px;
+    padding: 24px 16px;
+  }
+}
+
+.container h1 {
+  color: #2667FF;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+  text-align: center;
+}
+
+.container p {
+  color: #31343A;
+  line-height: 22px;
+}
+
+.about {
+  margin-bottom: 16px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
