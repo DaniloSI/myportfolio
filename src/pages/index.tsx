@@ -30,8 +30,8 @@ const Portfolio: NextPage<Props> = ({ profile, details }) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { lang = 'pt-BR' } = context.query;
-  const portfolio = await getPortfolio(lang as string);
+  const { locale = 'pt-BR' } = context;
+  const portfolio = await getPortfolio(locale);
   const gravatarUrl = 'https://pt.gravatar.com/userimage/152756597/44b18e27eb58dfd4581a598164f9de36.jpg';
 
   return {
