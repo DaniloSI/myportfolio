@@ -17,6 +17,7 @@ main {
 @media screen and (max-width: 1064px) {
   main {
     width: 100%;
+    height: fit-content;
     margin: 0px;
     padding: 16px;
     display: flex;
