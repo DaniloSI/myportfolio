@@ -2,9 +2,8 @@ import React from 'react';
 
 import { useRouter } from 'next/router';
 
-import style from '@/styles/Details.module.css';
-
-import Chip from './Chip';
+import Chip from '../Chip';
+import { Container, H1, P, About, Skills } from './style';
 
 export interface IDetails {
   about: string;
@@ -19,20 +18,20 @@ const Details: React.FC<Props> = ({ details }) => {
   const { locale } = useRouter();
 
   return (
-    <section className={style.container}>
-      <article className={style.about}>
-        <h1>{locale === 'pt-BR' ? 'Sobre mim' : 'About'}</h1>
-        <p>{details.about}</p>
-      </article>
+    <Container>
+      <About>
+        <H1>{locale === 'pt-BR' ? 'Sobre mim' : 'About'}</H1>
+        <P>{details.about}</P>
+      </About>
       <article>
-        <h1>{locale === 'pt-BR' ? 'Habilidades' : 'Skills'}</h1>
-        <div className={style.skills}>
+        <H1>{locale === 'pt-BR' ? 'Habilidades' : 'Skills'}</H1>
+        <Skills>
           {details.skills.map((skill) => (
             <Chip key={skill}>{skill}</Chip>
           ))}
-        </div>
+        </Skills>
       </article>
-    </section>
+    </Container>
   );
 };
 

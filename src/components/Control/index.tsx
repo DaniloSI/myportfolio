@@ -6,19 +6,19 @@ import 'react-toggle/style.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { useDarkMode } from '@/contexts/darkMode';
-
-import style from '@/styles/Control.module.css';
+import { useDarkMode } from '@/contexts/DarkModeContext';
 
 import Brazil from '@/assets/svg/br.svg';
 import UnitedStates from '@/assets/svg/us.svg';
+
+import { Button, Container } from './style';
 
 const Control: React.FC = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
   const { locale } = useRouter();
 
   return (
-    <div className={style.container}>
+    <Container>
       <Toggle
         className="toggle-dark"
         defaultChecked={darkMode}
@@ -29,11 +29,9 @@ const Control: React.FC = () => {
         onChange={toggleDarkMode}
       />
       <Link href="/" locale={locale === 'pt-BR' ? 'en-US' : 'pt-BR'}>
-        <button type="button" className={style.btnLang}>
-          {locale === 'pt-BR' ? <Brazil /> : <UnitedStates />}
-        </button>
+        <Button type="button">{locale === 'pt-BR' ? <Brazil /> : <UnitedStates />}</Button>
       </Link>
-    </div>
+    </Container>
   );
 };
 

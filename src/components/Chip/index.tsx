@@ -1,15 +1,15 @@
 import React from 'react';
 
-import style from '@/styles/Chip.module.css';
+import { Container, Span } from './style';
 
 type Props = {
   children: string;
 };
 
 const Chip: React.FC<Props> = ({ children }) => (
-  <div className={style.container}>
-    <span>{children}</span>
-  </div>
+  <Container>
+    <Span>{children}</Span>
+  </Container>
 );
 
 export default Chip;
