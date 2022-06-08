@@ -11,7 +11,7 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/DaniloSI/myportfolio">
 
-  <a href="https://github.com/DaniloSI/myportfolio/commits/master">
+  <a href="https://github.com/DaniloSI/myportfolio/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DaniloSI/myportfolio">
   </a>
 
