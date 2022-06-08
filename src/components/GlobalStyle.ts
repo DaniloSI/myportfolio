@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 
   main {
     width: 1064px;
-    height: 100vh;
+    height: calc(100vh - 44px);
     margin: 0px auto;
     display: flex;
     align-items: center;
