@@ -37,7 +37,12 @@ export const SocialMedia = styled.div`
 `;
 
 export const SocialMediaLink = styled.a`
+  width: 48px;
+  height: 48px;
   margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const GithubIcon = styled(Github)`
