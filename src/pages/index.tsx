@@ -32,12 +32,10 @@ const Portfolio: NextPage<Props> = ({ profile, details }) => {
 export const getStaticProps: GetStaticProps = async (context) => {
   const { locale = 'pt-BR' } = context;
   const portfolio = getPortfolio(locale);
-  const gravatarUrl = 'https://pt.gravatar.com/userimage/152756597/44b18e27eb58dfd4581a598164f9de36.jpg';
 
   return {
     props: {
       profile: {
-        gravatarUrl,
         name: 'Danilo de Oliveira',
         jobTitle: portfolio.jobTitle,
         github: portfolio.github,
