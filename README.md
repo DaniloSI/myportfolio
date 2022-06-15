@@ -29,16 +29,16 @@
 - [x] Utilização de ESLint e Prettier para padronizar a formatação do código;
 - [x] Utilização de TypeScript;[^1]
 - [x] Utilização de styled-components para implementação de _Dark Mode_;
-- [x] i18n para pt-BR e en-US;
+- [x] Recurso i18n do next para pt-BR e en-US;
 - [x] Utilização de Context API para implementar o tema _Dark Mode_;
-- [x] Conteúdo do portfólio obtido em formato YAML a partir de um [gist](https://gist.github.com/DaniloSI/b5c23385c7af2b048581c18d1ddbac47) do github;[^2]
+- [x] Conteúdo do portfólio obtido em formato YAML;[^2]
 - [x] Deploy na vercel (domínio: [danilodeoliveira.dev](https://danilodeoliveira.dev/));
 - [ ] Criar testes unitários com Jest;
 - [ ] Criar testes end-to-end com Cypress;
 - [ ] Implementar/utilizar Carousel para exibir projetos e/ou experiências profissionais.
 
 [^1]: O uso do TypeScript é uma boa prática, pois permite definir um contrato para a interface de componentes, além de trazer diversos benefícios devido à tipagem
-[^2]: O uso de um YAML externo ao projeto permite atualizar meu portfólio sem alterar o código fonte.
+[^2]: O uso de um YAML permite atualizar meu portfólio de forma mais simples.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
