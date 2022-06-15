@@ -1,4 +1,4 @@
-import type { GetServerSideProps, NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 
 import getPortfolio from 'src/services/portfolio';
@@ -29,9 +29,9 @@ const Portfolio: NextPage<Props> = ({ profile, details }) => {
   );
 };
 
-export const getStaticProps: GetServerSideProps = async (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const { locale = 'pt-BR' } = context;
-  const portfolio = await getPortfolio(locale);
+  const portfolio = getPortfolio(locale);
   const gravatarUrl = 'https://pt.gravatar.com/userimage/152756597/44b18e27eb58dfd4581a598164f9de36.jpg';
 
   return {

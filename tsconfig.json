@@ -22,8 +22,9 @@
       "@/utils/*": ["src/utils/*"],
       "@/assets/*": ["src/assets/*"],
       "@/contexts/*": ["src/contexts/*"],
+      "@/data/*": ["src/data/*"],
     },
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/utils/*.js"],
+  "include": ["global.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", "src/utils/*.js"],
   "exclude": ["node_modules"]
 }

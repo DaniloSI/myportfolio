@@ -11,6 +11,11 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     })
 
+    config.module.rules.push({
+      test: /\.ya?ml$/,
+      use: 'yaml-loader'
+    })
+
     return config
   },
   i18n: {
