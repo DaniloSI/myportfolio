@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['pt.gravatar.com'],
+    deviceSizes: [100, 200]
   },
   webpack(config) {
     config.module.rules.push({
