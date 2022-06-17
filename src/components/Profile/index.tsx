@@ -22,10 +22,10 @@ const Profile: React.FC<Props> = ({ profile }) => {
       <JobTitle>{profile.jobTitle}</JobTitle>
       <Name>{profile.name}</Name>
       <SocialMedia>
-        <SocialMediaLink href={profile.github} target="_blank" rel="noreferrer">
+        <SocialMediaLink href={profile.github} target="_blank" rel="noreferrer" aria-label="Github">
           <GithubIcon />
         </SocialMediaLink>
-        <SocialMediaLink href={profile.linkedin} target="_blank" rel="noreferrer">
+        <SocialMediaLink href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
           <LinkedInIcon />
         </SocialMediaLink>
       </SocialMedia>

@@ -29,7 +29,9 @@ const Control: React.FC = () => {
         onChange={toggleDarkMode}
       />
       <Link href="/" locale={locale === 'pt-BR' ? 'en-US' : 'pt-BR'}>
-        <Button type="button">{locale === 'pt-BR' ? <Brazil /> : <UnitedStates />}</Button>
+        <Button type="button" aria-label="Change language">
+          {locale === 'pt-BR' ? <Brazil /> : <UnitedStates />}
+        </Button>
       </Link>
     </Container>
   );
