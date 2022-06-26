@@ -13,7 +13,7 @@ export const Button = styled.button`
   background: none;
   width: 24px;
   height: 24px;
-  margin-left: 24px;
+  margin: 0px 12px;
   border: none;
   padding: 0px;
   cursor: pointer;
