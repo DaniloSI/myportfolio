@@ -17,7 +17,7 @@ const Control: React.FC = () => {
   return (
     <Container>
       <Button type="button" aria-label="Dark mode" onClick={toggleDarkMode}>
-        {darkMode ? <MoonIcon /> : <SunIcon />}
+        {darkMode ? <SunIcon /> : <MoonIcon />}
       </Button>
 
       <Link href="/" locale={locale === 'pt-BR' ? 'en-US' : 'pt-BR'}>
