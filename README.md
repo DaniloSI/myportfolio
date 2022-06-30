@@ -5,6 +5,8 @@
 </h4>
 
 <p align="center">
+  <img alt="Code Climate Maintainability" src="https://img.shields.io/codeclimate/maintainability/DaniloSI/myportfolio">
+
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/DaniloSI/myportfolio">
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DaniloSI/myportfolio">
@@ -33,8 +35,6 @@
 - [x] Utilização de Context API para implementar o tema _Dark Mode_;
 - [x] Conteúdo do portfólio obtido em formato YAML;[^2]
 - [x] Deploy na vercel (domínio: [danilodeoliveira.dev](https://danilodeoliveira.dev/));
-- [ ] Criar testes unitários com Jest;
-- [ ] Criar testes end-to-end com Cypress;
 - [ ] Implementar/utilizar Carousel para exibir projetos e/ou experiências profissionais.
 
 [^1]: O uso do TypeScript é uma boa prática, pois permite definir um contrato para a interface de componentes, além de trazer diversos benefícios devido à tipagem
