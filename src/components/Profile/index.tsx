@@ -2,7 +2,28 @@ import React from 'react';
 
 import photo from '@/assets/img/me.jpeg';
 
-import { Container, Photo, JobTitle, Name, SocialMedia, SocialMediaLink, GithubIcon, LinkedInIcon } from './style';
+import {
+  Container,
+  Photo,
+  JobTitle,
+  Name,
+  SocialMedia,
+  SocialMediaLink as SocialMediaLinkStyled,
+  GithubIcon,
+  LinkedInIcon,
+} from './style';
+
+type SocialMediaLinkProps = {
+  link: string;
+  label: string;
+  children: React.ReactNode;
+};
+
+const SocialMediaLink: React.FC<SocialMediaLinkProps> = ({ link, label, children }) => (
+  <SocialMediaLinkStyled href={link} target="_blank" rel="noreferrer" aria-label={label}>
+    {children}
+  </SocialMediaLinkStyled>
+);
 
 export interface IProfile {
   name: string;
@@ -22,10 +43,10 @@ const Profile: React.FC<Props> = ({ profile }) => {
       <JobTitle>{profile.jobTitle}</JobTitle>
       <Name>{profile.name}</Name>
       <SocialMedia>
-        <SocialMediaLink href={profile.github} target="_blank" rel="noreferrer" aria-label="Github">
+        <SocialMediaLink link={profile.github} label="Github">
           <GithubIcon />
         </SocialMediaLink>
-        <SocialMediaLink href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <SocialMediaLink link={profile.linkedin} label="LinkedIn">
           <LinkedInIcon />
         </SocialMediaLink>
       </SocialMedia>
