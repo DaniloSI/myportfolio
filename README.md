@@ -5,7 +5,9 @@
 </h4>
 
 <p align="center">
-  <img alt="Code Climate Maintainability" src="https://img.shields.io/codeclimate/maintainability/DaniloSI/myportfolio">
+  <a href="https://codeclimate.com/github/DaniloSI/myportfolio">
+    <img alt="Code Climate Maintainability" src="https://img.shields.io/codeclimate/maintainability/DaniloSI/myportfolio">
+  </a>
 
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/DaniloSI/myportfolio">
 
