@@ -5,7 +5,7 @@
 </h4>
 
 <p align="center">
-  <a href="https://codeclimate.com/github/DaniloSI/myportfolio">
+  <a href="https://codeclimate.com/github/DaniloSI/myportfolio" target="_blank">
     <img alt="Code Climate Maintainability" src="https://img.shields.io/codeclimate/maintainability/DaniloSI/myportfolio">
   </a>
 
@@ -15,11 +15,11 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/DaniloSI/myportfolio">
 
-  <a href="https://github.com/DaniloSI/myportfolio/commits/main">
+  <a href="https://github.com/DaniloSI/myportfolio/commits/main" target="_blank">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DaniloSI/myportfolio">
   </a>
 
-  <a href="https://github.com/DaniloSI/myportfolio/issues">
+  <a href="https://github.com/DaniloSI/myportfolio/issues" target="_blank">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/DaniloSI/myportfolio">
   </a>
 
