@@ -2,28 +2,8 @@ import React from 'react';
 
 import photo from '@/assets/img/me.jpeg';
 
-import {
-  Container,
-  Photo,
-  JobTitle,
-  Name,
-  SocialMedia,
-  SocialMediaLink as SocialMediaLinkStyled,
-  GithubIcon,
-  LinkedInIcon,
-} from './style';
-
-type SocialMediaLinkProps = {
-  link: string;
-  label: string;
-  children: React.ReactNode;
-};
-
-const SocialMediaLink: React.FC<SocialMediaLinkProps> = ({ link, label, children }) => (
-  <SocialMediaLinkStyled href={link} target="_blank" rel="noreferrer" aria-label={label}>
-    {children}
-  </SocialMediaLinkStyled>
-);
+import SocialMediaLink from './SocialMediaLink';
+import { Container, Photo, JobTitle, Name, SocialMedia, GithubIcon, LinkedInIcon } from './style';
 
 export interface IProfile {
   name: string;
