@@ -37,7 +37,9 @@
 - [x] Utilização de Context API para implementar o tema _Dark Mode_;
 - [x] Conteúdo do portfólio obtido em formato YAML;[^2]
 - [x] Deploy na vercel (domínio: [danilodeoliveira.dev](https://danilodeoliveira.dev/));
-- [ ] Implementar/utilizar Carousel para exibir projetos e/ou experiências profissionais.
+- [ ] Implementar/utilizar Carousel para exibir projetos e/ou experiências profissionais;
+- [ ] Utilização de CSS puro (principalmente para o _Dark Mode_).
+
 
 [^1]: O uso do TypeScript é uma boa prática, pois permite definir um contrato para a interface de componentes, além de trazer diversos benefícios devido à tipagem
 [^2]: O uso de um YAML permite atualizar meu portfólio de forma mais simples.
