@@ -1,7 +1,5 @@
 import React from 'react';
 
-import photo from '@/assets/img/me.jpeg';
-
 import SocialMediaLink from './SocialMediaLink';
 import { Container, Photo, JobTitle, Name, SocialMedia, GithubIcon, LinkedInIcon } from './style';
 
@@ -19,7 +17,7 @@ type Props = {
 const Profile: React.FC<Props> = ({ profile }) => {
   return (
     <Container>
-      <Photo src={photo} alt="Picture of the author" width={200} height={200} layout="fixed" quality={65} />
+      <Photo src="/img/me.jpeg" alt="Picture of the author" width={200} height={200} layout="fixed" quality={65} priority />
       <JobTitle>{profile.jobTitle}</JobTitle>
       <Name>{profile.name}</Name>
       <SocialMedia>
