@@ -1,7 +1,11 @@
 import React from 'react';
 
+import Image from 'next/image';
+
+import me from '@/assets/img/me.jpeg';
+
 import SocialMediaLink from './SocialMediaLink';
-import { Container, Photo, JobTitle, Name, SocialMedia, GithubIcon, LinkedInIcon } from './style';
+import { Container, JobTitle, Name, SocialMedia, GithubIcon, LinkedInIcon, PhotoContainer } from './style';
 
 export interface IProfile {
   name: string;
@@ -17,7 +21,9 @@ type Props = {
 const Profile: React.FC<Props> = ({ profile }) => {
   return (
     <Container>
-      <Photo src="/me.jpeg" alt="Picture of the author" width={200} height={200} layout="fixed" quality={65} />
+      <PhotoContainer>
+        <Image src={me} alt="Picture of the author" placeholder="blur" quality={50} />
+      </PhotoContainer>
       <JobTitle>{profile.jobTitle}</JobTitle>
       <Name>{profile.name}</Name>
       <SocialMedia>

@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import styled from 'styled-components';
 
 import Github from '@/assets/svg/github.svg';
@@ -11,8 +9,11 @@ export const Container = styled.aside`
   align-items: center;
 `;
 
-export const Photo = styled(Image)`
+export const PhotoContainer = styled.div`
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
+  overflow: hidden;
 `;
 
 export const JobTitle = styled.span`
