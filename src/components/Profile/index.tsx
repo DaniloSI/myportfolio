@@ -17,7 +17,7 @@ type Props = {
 const Profile: React.FC<Props> = ({ profile }) => {
   return (
     <Container>
-      <Photo src="/img/me.jpeg" alt="Picture of the author" width={200} height={200} layout="fixed" quality={65} />
+      <Photo src="/me.jpeg" alt="Picture of the author" width={200} height={200} layout="fixed" quality={65} />
       <JobTitle>{profile.jobTitle}</JobTitle>
       <Name>{profile.name}</Name>
       <SocialMedia>
